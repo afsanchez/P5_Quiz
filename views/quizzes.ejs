@@ -1,16 +1,22 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Quizzes</title>
-    
-</head>
-<body>
-<h1> Lista de quizzes</h1>
-<a href="/">Inicio</a>
-<a href="/credits">Creditos</a>
-
-<u1>
-
-</u1>
-</body>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Quizzes</h1>
+    <h2>Lista de Quizzes:</h2>
+    <p><a href= "/">index</a></p>
+    <p><a href= "/quizzes">quizzes</a></p>
+    <p><a href= "/credits">créditos</a></p>
+    <ul>
+    <% for (let i in quizzes) {%>
+    <% let quiz = quizzes[i];%>
+    <li>
+        <%= quiz.question%> : <%=quiz.answer%>
+    </li>
+    <%}%>
+    </ul>
+  </body>
 </html>

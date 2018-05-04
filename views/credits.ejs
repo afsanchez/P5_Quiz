@@ -1,17 +1,17 @@
-var express = require ('express');
-var app = express();
-app.use (express.static('public'));
-app.listen (3000);
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
-<head>
-  <title>CORE</title>
-</head>
-
-<body>
-
-
-</body>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h2>Welcome to <%= title %></h2>
+    <p><a href= "/">index</a></p>
+    <p><a href= "/quizzes">quizzes</a></p>
+    <p><a href= "/credits">créditos</a></p>
+    <p>Los autores de esta práctica son: Miguel Terriza y Julia Maricalva</p>
+    
+    <img src="http://mouse.latercera.com/wp-content/uploads/2017/09/rick-sanchez-broma-900x600.png">
+  </body>
 </html>
